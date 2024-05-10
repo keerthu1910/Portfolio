@@ -29,20 +29,6 @@ export const Projects = () => {
                 </div>
             </div>
             <div className={visible ? 'project-content visible' : 'project-content'}>
-                <p className='title'>E-commerce website</p>
-                <div className='tech-stack'>
-                    <div>React JS</div>
-                    <div>Redux</div>
-                    <div>SCSS</div> 
-                </div>
-                <div className='project-description'>
-                    <p>This e-commerce website, powered by React JS, seamlessly integrates payment functionality. State management is efficiently handled using Redux.</p>
-                </div>
-                <div className='project-link'>
-                    <a href='https://cart95.netlify.app/' target='_blank'>View Project</a>
-                </div>
-            </div>
-            <div className={visible ? 'project-content visible' : 'project-content'}>
                 <p className='title'>Library application</p>
                 <div className='tech-stack'>
                     <div>React JS</div>
@@ -56,6 +42,20 @@ export const Projects = () => {
                 </div>
                 <div className='project-link'>
                     <a href='https://github.com/keerthu1910/Library' target='_blank'>View Project</a>
+                </div>
+            </div>
+            <div className={visible ? 'project-content visible' : 'project-content'}>
+                <p className='title'>E-commerce website</p>
+                <div className='tech-stack'>
+                    <div>React JS</div>
+                    <div>Redux</div>
+                    <div>SCSS</div> 
+                </div>
+                <div className='project-description'>
+                    <p>This e-commerce website, powered by React JS, seamlessly integrates payment functionality. State management is efficiently handled using Redux.</p>
+                </div>
+                <div className='project-link'>
+                    <a href='https://cart95.netlify.app/' target='_blank'>View Project</a>
                 </div>
             </div>
         </div>
