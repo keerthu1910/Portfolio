@@ -1,0 +1,104 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Poetsen One", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.projects{
+    padding: 5px;
+    margin-top: 100px;
+    .project-container{
+         padding: 10px;
+         @media only screen and (max-width:425px) and (min-width:320px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+            .project-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                &.visible{
+                    animation: slidein 1.8s;
+                }
+                a{
+                    background: white;
+                    padding: 5px;
+                    text-decoration: none;
+                    color:black;
+                    cursor: pointer;
+                    &:hover{
+                        color: #FFD700;
+                    }
+                }
+                margin-top:25px;
+                height:200px;
+                width: 700px;
+                padding: 10px;
+                background: #FFD700;
+                box-shadow: -8px -8px black;
+                @media only screen and (max-width:425px) and (min-width:320px) {
+                    height: 570px;
+                    width:200px;
+                }
+                @media only screen and (max-width:1023px) and (min-width:768px) {
+                    height: 250px;
+                    width:540px;
+                }
+                .title{
+                    font-size: 2rem;
+                }
+                &:nth-child(even){
+                    box-shadow: 8px -10px black;
+                    position: relative;
+                    left: 25%;
+
+                    @media only screen and (max-width:425px) and (min-width:320px) {
+                       left:0;
+                    }
+
+                    @media only screen and (max-width:1440px) and (min-width:1025px) {
+                        left:45%;
+                    }
+
+                    @media only screen and (min-width:2560px){
+                        left:65%;
+                    }
+                    @media only screen and (max-width:1023px) and (min-width:768px) {
+                        left:15%;
+                    }
+                }
+                .tech-stack{
+                    display: flex;
+                    @media only screen and (max-width:425px) and (min-width:320px) {
+                        flex-direction: column;
+                    }
+                    div{
+                        background:black;
+                        color: white;
+                        padding: 5px;
+                        border-radius: 5px;
+                        margin: 5px;
+                        &:hover{
+                            background: white;
+                            color: black;
+                        }
+                    }
+                }
+    }
+}
+}
+
+@keyframes slidein {
+   0%{
+    transform: scale(0);
+   }
+   100%{
+    transform: scale(20px);
+   }
+}
